@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="script.js"></script>
+    
+    <div class="container">
+        <div class="header">ROCK,PAPER,SCISSORS</div>
+        <div class="btn_container" >
+            <div class="btn" data-selection="rock">
+                <img class="rockIMG" src="img/hand-back-fist-solid.svg" alt="">
+            </div>
+            <div class="btn" data-selection="paper">
+                <img class="paperIMG" src="img/hand-solid.svg" alt="">
+            </div>
+            <div class="btn" data-selection="scissors">
+                <img class="scissorsIMG" src="img/hand-scissors-solid.svg" alt="">
+            </div>
+        </div>
+        <div class="result">
+            <div class="uAndC">
+                You
+                <span class="result-score" data-your-score>0</span>
+            </div>
+            <div data-final-column class="uAndC">
+                Computer
+                <span class="result-score" data-computer-score>0</span>
+            </div>
+            <!--<div class="result-selection winner">
+                <img class="computerWeapon" src="img/question-solid.svg" alt="">
+            </div>
+            <div class="result-selection">
+                <img class="computerWeapon" src="img/question-solid.svg" alt="">
+            </div>--> 
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>

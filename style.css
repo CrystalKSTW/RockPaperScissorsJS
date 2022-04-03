@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+.header {
+    margin-top: 30px 20px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #333036;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8FB38F;
+}
+
+.btn_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.btn {
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width:100px ;
+    height: 100px;
+    transition: 100ms;
+    border-radius: 42px;
+    background: #8fb38f;
+    box-shadow:  20px 20px 55px #7a987a,
+             -20px -20px 55px #a4cea4;
+}
+.btn:hover {
+    transform:scale(1.1)
+}
+
+img {
+    opacity: 0.8;
+}
+
+.rockIMG {
+    margin-top: 10px;
+    height: 80%;
+    width: 80%;
+    opacity: 0.8;
+}
+
+.paperIMG {
+    margin-top: 10px;
+    height: 80%;
+    width: 80%;
+    opacity: 0.8;
+}
+
+.scissorsIMG {
+    margin-top: 10px;
+    height: 80%;
+    width: 80%;
+    opacity: 0.8;
+}
+
+
+
+.result {
+    margin-top: 1rem;
+    font-size: larger;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.result-score {
+    margin-left: .1rem;
+    font-size: .7rem;
+    color: #333;
+}
+.uAndC {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.result-selection {
+    opacity: .5;
+    height: 80%;
+    width: 80%;
+}
+
+.result-selection.winner {
+    opacity: 1;
+
+}
